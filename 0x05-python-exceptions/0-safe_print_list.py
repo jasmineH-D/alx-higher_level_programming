@@ -8,12 +8,12 @@ def safe_print_list(my_list=[], x=0):
     Returns:
         The number of elements printed.
      """
-w = 0
-for i in range(x):
-try:
-print("{}".format(my_list[i]), end="")
-w += 1
-except IndexError:
-pass
-print()
-return w
+    w = 0
+    for i in range(x):
+        try:
+            print("{}".format(my_list[i]), end="")
+            w += 1
+        except IndexError:
+            pass
+        print()
+    return w
