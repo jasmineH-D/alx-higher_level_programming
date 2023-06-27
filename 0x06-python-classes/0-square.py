@@ -3,5 +3,5 @@
 
 
 class Square:
-    """Declaring a class that does nothin"""
-    pass$$
+    """Declaring a class that does nothing"""
+    pass
