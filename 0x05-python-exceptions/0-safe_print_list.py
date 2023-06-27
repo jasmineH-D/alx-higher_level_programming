@@ -8,5 +8,5 @@ def safe_print_list(my_list=[], x=0):
             w += 1
         except IndexError:
             print("", end="")
-        print("")
+    print("")
     return w
