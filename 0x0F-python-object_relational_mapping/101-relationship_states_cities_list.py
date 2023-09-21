@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-    lists all state objects, and corresponding city objects
-"""
+"""lists all State objects, and corresponding City objects,
+contained in the database hbtn_0e_101_usa"""
 
 if __name__ == "__main__":
 
@@ -21,5 +20,5 @@ if __name__ == "__main__":
     for state in session.query(State).order_by(State.id).all():
         print("{}: {}".format(state.id, state.name))
         for city in state.cities:
-            print("    {}:{}".format(city.id, city.name))
+            print("    {}: {}".format(city.id, city.name))
     session.close()
